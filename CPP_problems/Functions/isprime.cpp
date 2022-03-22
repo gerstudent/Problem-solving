@@ -24,12 +24,8 @@ using namespace std;
 
 int MinDivisor(int n){
     int div = 2;
-    for (int isqrt = sqrt(n); div < isqrt && n % div != 0; div++){
-    }
-
-    if (n % div != 0){
-        div = n;
-    }
+    for (int isqrt = sqrt(n); div < isqrt && n % div != 0; div++){}
+    if (n % div != 0) div = n;
 
     return div;
 }
